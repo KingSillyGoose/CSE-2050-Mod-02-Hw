@@ -26,7 +26,7 @@ def fizzbuzz(start, finish):
         Does not return anything, but prints out all numbers or words in range of 'start' and 'finish'.
     """
     for number in range(start, finish + 1):
-        if ((number % 3 == 0) and (number % 5 == 0)) or (('3' and '5') in str(number)):  # see rule 1
+        if ((number % 3 == 0) and (number % 5 == 0)) or (('3' in str(number)) and ('5' in str(number))):  # see rule 1
             print('fizzbuzz')
         elif (number % 3 == 0) or ('3' in str(number)):  # see rule 2
             print('fizz')
@@ -36,5 +36,5 @@ def fizzbuzz(start, finish):
             print(number)  # see rule 4
 
 #  test cases
-fizzbuzz(1, 35)
+fizzbuzz(1, 10)
 print(fizzbuzz.__doc__)
