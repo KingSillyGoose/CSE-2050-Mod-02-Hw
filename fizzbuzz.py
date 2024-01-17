@@ -28,6 +28,8 @@ def fizzbuzz(start, finish):
     for number in range(start, finish + 1):
         if ((number % 3 == 0) and (number % 5 == 0)) or (('3' in str(number)) and ('5' in str(number))):  # see rule 1
             print('fizzbuzz')
+        elif (('3' in str(number)) and (number % 5 == 0)) or (('5' in str(number)) and (number % 3 == 0)):  # see rule 1
+            print('fizzbuzz')
         elif (number % 3 == 0) or ('3' in str(number)):  # see rule 2
             print('fizz')
         elif (number % 5 == 0) or ('5' in str(number)):  # see rule 3
@@ -36,5 +38,5 @@ def fizzbuzz(start, finish):
             print(number)  # see rule 4
 
 #  test cases
-fizzbuzz(1, 10)
+fizzbuzz(5, 100)
 print(fizzbuzz.__doc__)
