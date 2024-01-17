@@ -21,6 +21,4 @@ def count_letters(file):
     return character_dictionary
 
 #  test cases
-count_letters('frost.txt')
-print(count_letters('frost.txt'))
-print(count_letters.__doc__)
+#  print(count_letters('frost.txt'))
